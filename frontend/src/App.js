@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios'
 import UserList from './components/Users.js'
+import Menu from './components/Menu.js'
+import Footer from './components/Footer.js'
 
 class App extends React.Component {
     constructor(props){
@@ -29,7 +31,11 @@ class App extends React.Component {
     render(){
         return(
             <div>
+                <Menu/>
+
                 <UserList users = {this.state.users} />
+
+                <Footer/>
             </div>
         )
     }
