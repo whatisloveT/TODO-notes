@@ -13,7 +13,9 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         total = int(kwargs['total']) - 1
         CustomUser.objects.create_superuser(username=get_random_string(7),
-                                            email='admin@' + get_random_string(5) + '.com',
-                                            password='0987654321')
+                                            email='admin@' + get_random_string(5) + '.com'
+                                            )
+        CustomUser.set_password('0987654321')
         for i in range(total):
-            CustomUser.objects.create_user(username=get_random_string(7), email='', password='1234567890')
+            CustomUser.objects.create_user(username=get_random_string(7), email=get_random_string(5) + '.com')
+            CustomUser.set_password('1234567890')
