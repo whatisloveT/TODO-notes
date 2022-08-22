@@ -24,7 +24,6 @@ class App extends React.Component {
                         'users' : users
                     }
                 )
-
             })
             .catch(error => console.log(error))
     }
