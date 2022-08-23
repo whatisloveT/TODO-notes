@@ -87,3 +87,8 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+Users/__pycache__/views.cpython-310.pyc
+todonotes/__pycache__/settings.cpython-310.pyc
+todonotes/__pycache__/urls.cpython-310.pyc
+db.sqlite3
